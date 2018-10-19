@@ -1,0 +1,65 @@
+@import '../../assets/styles/_reset.scss';
+@import '../../assets/styles/_variables.scss';
+
+body {
+    margin: 0;
+}
+
+#root {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.collapsible-container-wrapper {
+    border-radius: $border-radius;
+    box-shadow: 10px 7px 10px -2px $gray-200;
+    font: $font-family-base;
+    font-size: $font-size-base;
+    margin: $spacer * 5;
+
+    @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.action-text {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 $spacer * 2;
+
+    &.right-aligned {
+        text-align: right;
+    }
+}
+
+.action-buttons-wrapper {
+    background: $light-gray;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-top: 2px solid $gray-500;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacer * 5;
+
+    .svg {
+        height: $spacer * 5;
+        width: $spacer * 5;
+    }
+
+    .svg-previous {
+        transform: rotate(180deg);
+    }
+
+    @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+        padding: $spacer * 4;
+
+        .svg {
+            margin: 0;
+        }
+
+        .action-text {
+            font-size: 14px;
+        }
+    }
+}

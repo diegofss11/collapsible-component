@@ -1,0 +1,59 @@
+@import '../../assets/styles/_variables.scss';
+
+.btn {
+    align-items: center;
+    border: none;
+    background: none;
+    display: flex;
+    padding: 0;
+    letter-spacing: 0.5px;
+
+    @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+        letter-spacing: 0.2px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        color: $btn-disabled-text-color;
+        cursor: auto;
+
+        svg {
+            fill: $btn-disabled-text-color;
+        }
+    }
+
+    &--primary {
+        color: $btn-primary-text-color;
+
+        svg {
+            fill: $btn-primary-text-color-hover;
+        }
+
+        &:hover:enabled {
+            color: $btn-primary-text-color-hover;
+
+            svg {
+                fill: $btn-primary-text-color-hover;
+            }
+        }
+    }
+
+    &--secondary {
+        color: $btn-secondary-text-color;
+
+        svg {
+            fill: $btn-secondary-text-color;
+        }
+
+        &:hover:enabled {
+            color: $btn-secondary-text-color-hover;
+
+            svg {
+                fill: $btn-secondary-text-color-hover;
+            }
+        }
+    }
+}

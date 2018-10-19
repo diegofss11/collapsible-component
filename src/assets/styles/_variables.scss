@@ -1,0 +1,28 @@
+$green: #488732;
+$light-gray: #F8F8F8;
+$gray-200: #E6E6E6;
+$gray-400: #BBBBBB;
+$gray-500: #BEBEBE;
+$gray-800: #4F4F4F;
+
+$background-color: white;
+
+$breakpoint-medium-devices-and-desktop: 992px;
+
+$btn-primary-text-color: $green;
+$btn-secondary-text-color: black;
+$btn-disabled-text-color: $gray-500;
+
+$btn-primary-text-color-hover: lighten( $btn-primary-text-color, 10% );
+$btn-secondary-text-color-hover: lighten( $btn-secondary-text-color, 50% );
+
+$collapsible-header-background-color: #34273A;
+
+$font-family-base: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font-size-base: 16px;
+
+$font-size-h1: 24px;
+
+$border-radius: 10px;
+
+$spacer: 5px;

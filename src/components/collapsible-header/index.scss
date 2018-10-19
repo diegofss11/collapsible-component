@@ -1,0 +1,54 @@
+@import '../../assets/styles/_variables.scss';
+
+$collapsible-header-text-color: white;
+
+.collapsible-header {
+    align-items: center;
+    background: $collapsible-header-background-color;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    color: $collapsible-header-text-color;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacer * 5;
+
+    @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+        padding: 20px;
+    }
+
+    .information {
+        display: flex;
+        align-items: center;
+    }
+
+    .collapsible-title {
+        margin-left: $spacer * 4;
+
+        @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+            margin-left: $spacer * 3;
+        }
+    }
+
+    .svg {
+        width: $spacer * 8;
+        height: $spacer * 8;
+
+        @media only screen and (max-width : $breakpoint-medium-devices-and-desktop) {
+            height: $spacer * 5;
+            width: $spacer * 5;
+        }
+
+        &-caret {
+            fill: $collapsible-header-text-color;
+
+            :hover {
+                cursor: pointer;
+                fill: darken($collapsible-header-text-color, 10%);
+            }
+        }
+
+        &-info {
+            fill: $collapsible-header-text-color;
+        }
+    }
+}
